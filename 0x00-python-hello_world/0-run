@@ -1,7 +1,6 @@
 #!/bin/bash
 
-[[ ! -f "$PYFILE" ]] && echo "File '$PYFILE' not found" && exit 1
-[[ ! -x "$PYFILE" ]] && echo "Permission denied" && exit 1
-[[ ! -z "$PYFILE"]] && echo "PYFILE environment variable not set" && exit 1
+[[ ! -f $PYFILE ]] && echo "File '$PYFILE' not found" && exit 1
+[[ ! -x $PYFILE ]] && echo "Permission denied" && exit 1
 
 python3 "$PYFILE"
