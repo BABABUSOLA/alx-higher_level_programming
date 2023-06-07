@@ -3,7 +3,7 @@ def fizzbuzz():
     value = None
     for i in range(1, 101):
         if(i % 3 == 0 and i % 5 == 0):
-           value  = "FizzBizz"
+           value  = "FizzBuzz"
         elif(i % 5 == 0):
            value = "Buzz"
         elif(i % 3 == 0):
