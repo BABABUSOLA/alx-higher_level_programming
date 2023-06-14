@@ -3,5 +3,5 @@
 
 
 def update_dictionary(a_dictionary, key, value):
-    value = a_dictionary[key]
-    return value
+    a_dictionary[key] = value
+    return a_dictionary
