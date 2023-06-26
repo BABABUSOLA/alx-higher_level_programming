@@ -1,6 +1,7 @@
 #!/bin/usr/python3
 
-"""Print x elememts of a list.
+def safe_print_list(my_list=[], x=0):
+    """Print x elememts of a list.
 
     Args:
         my_list (list): The list to print elements from.
@@ -8,16 +9,17 @@
 
     Returns:
         The number of elements printed.
-"""
-
-def safe_print_list(my_list=[], x=0):
+    """
 
     count = 0
     for i in range(x):
         try:
-            print("{}".format(my_list[i], end="")
+            print("{}".format(my_list[i]), end="")
             count += 1
-        except IndexError:
-             break
-    print ("")
+        except IndexError as e:
+            print(e)
+            break
+        except SyntaxError as ex:
+            print(ex,'the ex')
+    print("")
     return count
