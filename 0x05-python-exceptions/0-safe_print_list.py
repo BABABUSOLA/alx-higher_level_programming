@@ -1,4 +1,4 @@
-#!/bin/usr/python
+#!/bin/usr/python3
 
 """Print x elememts of a list.
 
