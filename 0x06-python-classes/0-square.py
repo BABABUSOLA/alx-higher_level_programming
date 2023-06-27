@@ -6,5 +6,5 @@ class Square:
     pass
 
 
-p = Square
+p = Square()
 print(p)
